@@ -61,7 +61,7 @@ export default function Home() {
                     {", ngoding: "}
                     <span className="line-through text-red-400">true</span>
                     <span className="text-red-500 pl-1">false</span>
-                    {", anime: "}
+                    {", fesnuk: "}
                     <span className="text-green-500">true</span>
                     {" }"}
                     <div className="absolute -bottom-1 right-4 w-16 h-0.5 bg-blue-300 rotate-[5deg]"></div>
@@ -69,7 +69,7 @@ export default function Home() {
                 </div>
                 <ScrollReveal>
                   <p className="text-gray-600 text-lg max-w-md ml-6 font-mono rotate-[1deg] transform hover:-rotate-[0.5deg] transition-transform border-l-2 border-blue-200 pl-3">
-                    Komunitas para programmer yang punya niat setinggi langit tapi eksekusinya setipis kertas, lebih suka nonton anime daripada ngetik kode.
+                    Komunitas para programmer yang punya niat setinggi langit tapi eksekusinya setipis kertas, lebih suka scroll fesnuk daripada ngetik kode.
                   </p>
                 </ScrollReveal>
                 <ScrollReveal delay={0.2}>
@@ -84,7 +84,7 @@ export default function Home() {
                       size="lg"
                       className="border-blue-300 text-blue-600 hover:bg-blue-50 -rotate-[2deg] hover:rotate-0 transition-all font-mono group"
                     >
-                      <span className="group-hover:-translate-y-0.5 transition-transform inline-block">buyWaifu()</span>
+                      <span className="group-hover:-translate-y-0.5 transition-transform inline-block">scrollFesnuk()</span>
                       <div className="absolute -bottom-0.5 left-2 right-2 h-0.5 bg-blue-200 scale-0 group-hover:scale-100 transition-transform origin-center"></div>
                     </Button>
                   </div>
@@ -170,7 +170,7 @@ export default function Home() {
                     </span>
                   </h3>
                   <p className="text-gray-600 font-mono relative">
-                    Koleksi alasan kreatif kenapa tidak bisa ngoding hari ini. "Mercury sedang retrograde" adalah
+                    Koleksi alasan kreatif kenapa tidak bisa ngoding hari ini. "Harus cek notifikasi fesnuk" adalah
                     favorit.
                     <Clock className="absolute -bottom-2 -right-2 h-5 w-5 text-gray-300 opacity-50 rotate-[-10deg]" />
                   </p>
@@ -404,7 +404,7 @@ export default function Home() {
                 <div className="inline-flex items-center rounded-full border border-blue-200 px-3 py-1 text-sm font-medium text-blue-600 bg-white mb-4 -rotate-[2deg] hover:rotate-0 transition-transform font-mono shadow-sm">
                   <Zap className="mr-2 h-4 w-4 animate-pulse" />
                   <span className="group relative">
-                    activities.filter(noCode).map(anime)
+                    activities.filter(noCode).map(fesnuk)
                     <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-500 group-hover:w-full transition-all duration-300"></span>
                   </span>
                 </div>
@@ -418,8 +418,8 @@ export default function Home() {
               </ScrollReveal>
               <ScrollReveal delay={0.2}>
                 <p className="text-gray-600 ml-3 font-mono relative bg-white/70 p-2 rounded-md inline-block rotate-[1deg] shadow-sm transform hover:rotate-0 transition-transform">
-                  Berbagai kegiatan sugoi yang kami lakukan untuk menghindari ngoding sambil tetap merasa seperti
-                  programmer sugoi desu ne~
+                  Berbagai kegiatan keren yang kami lakukan untuk menghindari ngoding sambil tetap merasa seperti
+                  programmer profesional.
                 </p>
               </ScrollReveal>
             </div>
@@ -428,8 +428,8 @@ export default function Home() {
               <ScrollReveal delay={0.1}>
                 <ChaoticFeatureCard
                   icon={<Laugh className="h-5 w-5" />}
-                  title="Anime Meme of the Week"
-                  description="Voting meme programming paling kawaii tiap minggu. Pemenang mendapat badge 'Meme Lord-sama'."
+                  title="Fesnuk Meme of the Week"
+                  description="Voting meme programming paling kocak tiap minggu. Pemenang mendapat badge 'Meme Lord'."
                   rotation={3.5}
                   translateY={-8}
                   translateX={12}
@@ -440,8 +440,8 @@ export default function Home() {
               <ScrollReveal delay={0.2}>
                 <ChaoticFeatureCard
                   icon={<Lightbulb className="h-5 w-5" />}
-                  title="Waifu Project Showcase"
-                  description="Pamer waifu project yang 'akan dibuat' tapi terhalang marathon anime. Konsep dan wireframe only desu~"
+                  title="Fesnuk Project Showcase"
+                  description="Pamer project yang 'akan dibuat' tapi terhalang marathon scrolling fesnuk. Konsep dan wireframe only."
                   rotation={-2.8}
                   translateY={18}
                   translateX={-7}
@@ -452,8 +452,8 @@ export default function Home() {
               <ScrollReveal delay={0.3}>
                 <ChaoticFeatureCard
                   icon={<Zap className="h-5 w-5" />}
-                  title="Kawaii Alasan Generator"
-                  description="Generator alasan kenapa tidak ngoding hari ini. 'Waifu membutuhkan perhatian saya' adalah favorit."
+                  title="Creative Alasan Generator"
+                  description="Generator alasan kenapa tidak ngoding hari ini. 'Perlu cek update fesnuk' adalah favorit."
                   rotation={2.2}
                   translateY={-15}
                   translateX={5}
@@ -464,8 +464,8 @@ export default function Home() {
               <ScrollReveal delay={0.4}>
                 <ChaoticFeatureCard
                   icon={<Users className="h-5 w-5" />}
-                  title="King Anime vs King Work"
-                  description="Debat sengit antara fans anime dan produktivitas tanpa ada yang pernah menulis kode. Anime selalu menang!"
+                  title="King JS vs King PHP"
+                  description="Debat sengit antara fans JavaScript dan PHP tanpa ada yang pernah menulis kode. JavaScript selalu menang!"
                   rotation={-3.3}
                   translateY={12}
                   translateX={-14}
@@ -476,8 +476,8 @@ export default function Home() {
               <ScrollReveal delay={0.5}>
                 <ChaoticFeatureCard
                   icon={<Palette className="h-5 w-5" />}
-                  title="Dere-dere Developer"
-                  description="Generator nama-nama tsundere/yandere developer seperti 'Ngoding-nya bukan karena suka kamu, baka!'"
+                  title="Scroll-scroll Developer"
+                  description="Generator nama-nama developer yang suka scroll fesnuk seperti 'Ngoding boleh, scroll fesnuk harus!'"
                   rotation={2.7}
                   translateY={-10}
                   translateX={8}
@@ -488,8 +488,8 @@ export default function Home() {
               <ScrollReveal delay={0.6}>
                 <ChaoticFeatureCard
                   icon={<Heart className="h-5 w-5" />}
-                  title="Waifu Code Review"
-                  description="Code review oleh waifu AI yang selalu bilang 'Kyaa~ kode kamu sugoi desu ne~' meski kodenya hancur."
+                  title="Fesnuk Code Review"
+                  description="Code review via comments fesnuk yang selalu bilang 'Keren banget code kamu!' meski kodenya hancur."
                   rotation={-2.5}
                   translateY={14}
                   translateX={-5}
@@ -503,8 +503,8 @@ export default function Home() {
               <ScrollReveal delay={0.7}>
                 <div className="bg-white/70 backdrop-blur-sm p-4 rounded-lg shadow-sm rotate-[1.5deg] border border-blue-100">
                   <blockquote className="text-gray-700 font-mono italic">
-                    "Menulis kode itu seperti mendapatkan waifu baru — terlihat menyenangkan di awal, lalu berakhir dengan banyak masalah yang harus diselesaikan."
-                    <footer className="text-right text-sm text-gray-500 mt-2">— Hikikomori Developer-san</footer>
+                    "Menulis kode itu seperti scrolling fesnuk — terlihat menyenangkan di awal, lalu berakhir dengan membuang waktu berjam-jam tanpa hasil."
+                    <footer className="text-right text-sm text-gray-500 mt-2">— Fesnuk Addict Developer</footer>
                   </blockquote>
                 </div>
               </ScrollReveal>
@@ -524,15 +524,15 @@ export default function Home() {
                   <div className="p-8 md:p-12 flex flex-col justify-center -rotate-[1.5deg] group-hover:rotate-[-0.5deg] transition-transform">
                     <h2 className="text-3xl font-bold tracking-tight mb-4 font-mono">
                       Join Nakama
-                      <span className="text-blue-600 rotate-[2deg] inline-block transform hover:rotate-0 transition-transform">.then(watchAnime)</span>
+                      <span className="text-blue-600 rotate-[2deg] inline-block transform hover:rotate-0 transition-transform">.then(scrollFesnuk)</span>
                     </h2>
                     <p className="text-gray-600 mb-6 ml-2 font-mono border-l-2 border-blue-200 pl-3">
-                      Bergabunglah dengan ratusan ribu programmer weeb yang enggan ngoding. Berbagi meme anime, alasan tidak
-                      ngoding karena nonton anime, dan saling mendukung untuk tetap merasa kawaii.
+                      Bergabunglah dengan ratusan ribu programmer yang enggan ngoding. Berbagi meme, alasan tidak
+                      ngoding karena scroll fesnuk, dan saling mendukung untuk tetap merasa profesional.
                     </p>
                     <div className="space-y-4 rotate-[1.5deg] hover:rotate-[0.5deg] transition-transform">
                       <Button size="lg" className="w-full bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-mono group relative overflow-hidden">
-                        <span className="group-hover:translate-x-1 transition-transform inline-block">joinDiscord().then(sayOhayou)</span>
+                        <span className="group-hover:translate-x-1 transition-transform inline-block">joinDiscord().then(sayHalo)</span>
                         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
                       </Button>
                       <Button
@@ -554,7 +554,7 @@ export default function Home() {
                           <div className="mr-2 h-5 w-5 rounded-full bg-white/20 flex items-center justify-center text-white">
                             ✓
                           </div>
-                          <span className="group-hover/item:text-blue-200 transition-colors">excuses: ['anime marathon', 'waifu gacha'],</span>
+                          <span className="group-hover/item:text-blue-200 transition-colors">excuses: ['fesnuk scrolling', 'reels marathon'],</span>
                         </li>
                         <li className="flex items-center group/item hover:-translate-y-0.5 transition-transform">
                           <div className="mr-2 h-5 w-5 rounded-full bg-white/20 flex items-center justify-center text-white">
@@ -566,7 +566,7 @@ export default function Home() {
                           <div className="mr-2 h-5 w-5 rounded-full bg-white/20 flex items-center justify-center text-white">
                             ✓
                           </div>
-                          <span className="group-hover/item:text-blue-200 transition-colors">waifus: ['too many to count'],</span>
+                          <span className="group-hover/item:text-blue-200 transition-colors">friends: ['too many to count'],</span>
                         </li>
                         <li className="flex items-center group/item hover:-translate-y-0.5 transition-transform">
                           <div className="mr-2 h-5 w-5 rounded-full bg-white/20 flex items-center justify-center text-white">
@@ -578,11 +578,11 @@ export default function Home() {
                           <div className="mr-2 h-5 w-5 rounded-full bg-white/20 flex items-center justify-center text-white">
                             ✓
                           </div>
-                          <span className="group-hover/item:text-blue-200 transition-colors">animeList: 'longer than git log'</span>
+                          <span className="group-hover/item:text-blue-200 transition-colors">fesnukTime: 'longer than git log'</span>
                         </li>
                       </ul>
                       <div>{`}`};</div>
-                      <div className="mt-2 text-xs text-right opacity-70">// kawaii desu ne~</div>
+                      <div className="mt-2 text-xs text-right opacity-70">// scroll terus...</div>
                     </div>
                   </div>
                 </div>
