@@ -1,0 +1,16 @@
+<svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="kawaii-pattern" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M10 10C10 7.79086 8.20914 6 6 6C3.79086 6 2 7.79086 2 10C2 12.2091 3.79086 14 6 14C8.20914 14 10 12.2091 10 10Z" stroke="currentColor" stroke-width="0.5" fill="none"/>
+      <path d="M40 10C40 7.79086 38.2091 6 36 6C33.7909 6 32 7.79086 32 10C32 12.2091 33.7909 14 36 14C38.2091 14 40 12.2091 40 10Z" stroke="currentColor" stroke-width="0.5" fill="none"/>
+      <path d="M25 20C25 17.7909 23.2091 16 21 16C18.7909 16 17 17.7909 17 20C17 22.2091 18.7909 24 21 24C23.2091 24 25 22.2091 25 20Z" stroke="currentColor" stroke-width="0.5" fill="none"/>
+      <path d="M55 20C55 17.7909 53.2091 16 51 16C48.7909 16 47 17.7909 47 20C47 22.2091 48.7909 24 51 24C53.2091 24 55 22.2091 55 20Z" stroke="currentColor" stroke-width="0.5" fill="none"/>
+      <path d="M10 40C10 37.7909 8.20914 36 6 36C3.79086 36 2 37.7909 2 40C2 42.2091 3.79086 44 6 44C8.20914 44 10 42.2091 10 40Z" stroke="currentColor" stroke-width="0.5" fill="none"/>
+      <path d="M40 40C40 37.7909 38.2091 36 36 36C33.7909 36 32 37.7909 32 40C32 42.2091 33.7909 44 36 44C38.2091 44 40 42.2091 40 40Z" stroke="currentColor" stroke-width="0.5" fill="none"/>
+      <path d="M25 50C25 47.7909 23.2091 46 21 46C18.7909 46 17 47.7909 17 50C17 52.2091 18.7909 54 21 54C23.2091 54 25 52.2091 25 50Z" stroke="currentColor" stroke-width="0.5" fill="none"/>
+      <path d="M55 50C55 47.7909 53.2091 46 51 46C48.7909 46 47 47.7909 47 50C47 52.2091 48.7909 54 51 54C53.2091 54 55 52.2091 55 50Z" stroke="currentColor" stroke-width="0.5" fill="none"/>
+      <path d="M20 30L25 32M28 30H32M35 30L40 32" stroke="currentColor" stroke-width="0.5" fill="none"/>
+    </pattern>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#kawaii-pattern)" />
+</svg> 

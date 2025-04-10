@@ -1,0 +1,30 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /quotes/{quote} {
+      // Allow anyone to read quotes
+      allow read: if true;
+      
+      // Allow anyone to create quotes but with field validation
+      allow create: if 
+        // Required fields must exist
+        request.resource.data.keys().hasAll(['author', 'text', 'createdAt']) &&
+        
+        // Author must be a string between 2-50 characters
+        request.resource.data.author is string &&
+        request.resource.data.author.size() >= 2 &&
+        request.resource.data.author.size() <= 50 &&
+        
+        // Text must be a string between 5-300 characters
+        request.resource.data.text is string &&
+        request.resource.data.text.size() >= 5 &&
+        request.resource.data.text.size() <= 300 &&
+        
+        // CreatedAt must be a timestamp
+        request.resource.data.createdAt is timestamp;
+      
+      // No one can update or delete quotes except admins (implement admin auth later)
+      allow update, delete: if false;
+    }
+  }
+} 
