@@ -74,19 +74,23 @@ export default function Home() {
                 </ScrollReveal>
                 <ScrollReveal delay={0.2}>
                   <div className="flex flex-col sm:flex-row gap-4 rotate-[1.5deg] transform hover:rotate-[0.5deg] transition-transform">
-                    <Button size="lg" className="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-mono group overflow-hidden relative border-none">
-                      <span className="group-hover:translate-x-2 transition-transform inline-block">procrastinate()</span>
-                      <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
-                    </Button>
-                    <Button
-                      variant="outline"
-                      size="lg"
-                      className="border-blue-300 text-blue-600 hover:bg-blue-50 -rotate-[2deg] hover:rotate-0 transition-all font-mono group"
-                    >
-                      <span className="group-hover:-translate-y-0.5 transition-transform inline-block">scrollFesnuk()</span>
-                      <div className="absolute -bottom-0.5 left-2 right-2 h-0.5 bg-blue-200 scale-0 group-hover:scale-100 transition-transform origin-center"></div>
-                    </Button>
+                    <Link href="https://codewithwan.tech/" target="_blank" rel="noopener noreferrer">
+                      <Button size="lg" className="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-mono group overflow-hidden relative border-none">
+                        <span className="group-hover:translate-x-2 transition-transform inline-block">meetTheLazyDev()</span>
+                        <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
+                      </Button>
+                    </Link>
+                    <Link href="https://www.facebook.com/groups/programmerhandal" target="_blank" rel="noopener noreferrer">
+                      <Button
+                        variant="outline"
+                        size="lg"
+                        className="border-blue-300 text-blue-600 hover:bg-blue-50 -rotate-[2deg] hover:rotate-0 transition-all font-mono group"
+                      >
+                        <span className="group-hover:-translate-y-0.5 transition-transform inline-block">scrollFesnuk()</span>
+                        <div className="absolute -bottom-0.5 left-2 right-2 h-0.5 bg-blue-200 scale-0 group-hover:scale-100 transition-transform origin-center"></div>
+                      </Button>
+                    </Link>
                   </div>
                 </ScrollReveal>
               </div>
@@ -626,12 +630,12 @@ export default function Home() {
                 Facebook()
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-300 to-blue-500 group-hover:w-full transition-all duration-300"></span>
               </Link>
-              <Link href="#" className="text-gray-500 hover:text-blue-600 transition-colors relative group">
+              <Link href="https://github.com/IMPHNEN" className="text-gray-500 hover:text-blue-600 transition-colors relative group">
                 GitHub()
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-300 to-blue-500 group-hover:w-full transition-all duration-300"></span>
               </Link>
-              <Link href="#" className="text-gray-500 hover:text-blue-600 transition-colors relative group">
-                Twitter()
+              <Link href="https://www.instagram.com/imphnen.dev" className="text-gray-500 hover:text-blue-600 transition-colors relative group">
+                Instagram()
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-300 to-blue-500 group-hover:w-full transition-all duration-300"></span>
               </Link>
             </div>

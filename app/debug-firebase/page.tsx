@@ -29,23 +29,23 @@ export default function DebugPage() {
       NEXT_PUBLIC_FIREBASE_APP_ID: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
       NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID: process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID,
     })
-    
+
     // Check if environment variables are set
-    const envVarsSet = !!process.env.NEXT_PUBLIC_FIREBASE_API_KEY && 
-                       !!process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID
-    
+    const envVarsSet = !!process.env.NEXT_PUBLIC_FIREBASE_API_KEY &&
+      !!process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID
+
     if (!envVarsSet) {
       setStatus("ERROR: Environment variables not set")
       return
     }
-    
+
     if (!isFirebaseConfigured) {
       setStatus("ERROR: Firebase not configured")
       return
     }
-    
+
     setStatus("Fetching quotes...")
-    
+
     // Try to fetch quotes
     fetchQuotes()
   }, [])
@@ -69,7 +69,7 @@ export default function DebugPage() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    
+
     try {
       setStatus("Adding test quote...")
       const result = await addQuote(formData.author, formData.text)
@@ -90,20 +90,20 @@ export default function DebugPage() {
           Back to Home
         </Link>
       </div>
-      
+
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div className="bg-white rounded-lg shadow p-6">
           <h2 className="text-xl font-bold mb-4">Firebase Status</h2>
           <div className={`mb-4 p-3 rounded ${status.includes("ERROR") ? "bg-red-100 text-red-800" : status.includes("SUCCESS") ? "bg-green-100 text-green-800" : "bg-yellow-100 text-yellow-800"}`}>
             {status}
           </div>
-          
+
           {error && (
             <div className="mb-4 p-3 bg-red-100 text-red-800 rounded">
               Error: {error}
             </div>
           )}
-          
+
           <h3 className="font-bold mb-2">Environment Variables</h3>
           <div className="bg-gray-100 p-3 rounded mb-4 font-mono text-sm overflow-auto max-h-48">
             {Object.entries(envVars).map(([key, value]) => (
@@ -112,12 +112,12 @@ export default function DebugPage() {
               </div>
             ))}
           </div>
-          
+
           <Button onClick={fetchQuotes} className="w-full">
             Refresh Quotes
           </Button>
         </div>
-        
+
         <div className="bg-white rounded-lg shadow p-6">
           <h2 className="text-xl font-bold mb-4">Add Test Quote</h2>
           <form onSubmit={handleSubmit} className="space-y-4">
@@ -146,7 +146,7 @@ export default function DebugPage() {
           </form>
         </div>
       </div>
-      
+
       <div className="mt-8 bg-white rounded-lg shadow p-6">
         <h2 className="text-xl font-bold mb-4">Retrieved Quotes ({quotes.length})</h2>
         {quotes.length > 0 ? (

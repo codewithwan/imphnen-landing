@@ -10,7 +10,9 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata = {
   title: "IMPHNEN - Ingin Menjadi Programmer Handal Namun Enggan Ngoding",
   description: "Komunitas para programmer yang punya niat setinggi langit tapi eksekusinya setipis kertas.",
-  generator: 'v0.dev'
+  icons: {
+    icon: "/favicon.ico",
+  },
 }
 
 export default function RootLayout({
