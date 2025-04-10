@@ -523,7 +523,7 @@ export default function Home() {
                 <div className="grid grid-cols-1 md:grid-cols-2">
                   <div className="p-8 md:p-12 flex flex-col justify-center -rotate-[1.5deg] group-hover:rotate-[-0.5deg] transition-transform">
                     <h2 className="text-3xl font-bold tracking-tight mb-4 font-mono">
-                      Join Nakama
+                      Join IMPHNEN
                       <span className="text-blue-600 rotate-[2deg] inline-block transform hover:rotate-0 transition-transform">.then(scrollFesnuk)</span>
                     </h2>
                     <p className="text-gray-600 mb-6 ml-2 font-mono border-l-2 border-blue-200 pl-3">
@@ -531,18 +531,23 @@ export default function Home() {
                       ngoding karena scroll fesnuk, dan saling mendukung untuk tetap merasa profesional.
                     </p>
                     <div className="space-y-4 rotate-[1.5deg] hover:rotate-[0.5deg] transition-transform">
-                      <Button size="lg" className="w-full bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-mono group relative overflow-hidden">
-                        <span className="group-hover:translate-x-1 transition-transform inline-block">joinDiscord().then(sayHalo)</span>
-                        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
-                      </Button>
-                      <Button
-                        variant="outline"
-                        size="lg"
-                        className="w-full border-blue-300 text-blue-600 hover:bg-blue-50 -rotate-[1.5deg] hover:rotate-[-0.5deg] transition-transform font-mono group"
-                      >
-                        <span className="group-hover:-translate-y-0.5 transition-transform inline-block">joinGithub().then(neverCommit)</span>
-                        <div className="absolute -bottom-0.5 left-2 right-2 h-0.5 bg-blue-200 scale-0 group-hover:scale-100 transition-transform origin-center"></div>
-                      </Button>
+                      <Link href="https://discord.gg/W4XyRAmPSD" target="_blank" rel="noopener noreferrer">
+                        <Button size="lg" className="w-full bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-mono group relative overflow-hidden">
+                          <span className="group-hover:translate-x-1 transition-transform inline-block">joinDiscord().then(sayHalo)</span>
+                          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
+                        </Button>
+                      </Link>
+                      <div className="h-2"></div>
+                      <Link href="https://www.facebook.com/groups/programmerhandal" target="_blank" rel="noopener noreferrer">
+                        <Button
+                          variant="outline"
+                          size="lg"
+                          className="w-full border-blue-300 text-blue-600 hover:bg-blue-50 -rotate-[1.5deg] hover:rotate-[-0.5deg] transition-transform font-mono group"
+                        >
+                          <span className="group-hover:-translate-y-0.5 transition-transform inline-block">joinFacebook().then(fesnuk)</span>
+                          <div className="absolute -bottom-0.5 left-2 right-2 h-0.5 bg-blue-200 scale-0 group-hover:scale-100 transition-transform origin-center"></div>
+                        </Button>
+                      </Link>
                     </div>
                   </div>
                   <div className="bg-gradient-to-br from-blue-500 to-blue-600 p-8 md:p-12 flex items-center justify-center rotate-[0.5deg] group-hover:rotate-[0.2deg] transition-transform relative overflow-hidden">
@@ -613,8 +618,12 @@ export default function Home() {
               &copy; {new Date().getFullYear()} IMPHNEN - Ingin Menjadi Programmer Handal Namun Enggan Ngoding
             </p>
             <div className="flex gap-4 font-mono">
-              <Link href="#" className="text-gray-500 hover:text-blue-600 transition-colors relative group">
+              <Link href="https://discord.gg/W4XyRAmPSD" className="text-gray-500 hover:text-blue-600 transition-colors relative group" target="_blank" rel="noopener noreferrer">
                 Discord()
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-300 to-blue-500 group-hover:w-full transition-all duration-300"></span>
+              </Link>
+              <Link href="https://www.facebook.com/groups/programmerhandal" className="text-gray-500 hover:text-blue-600 transition-colors relative group" target="_blank" rel="noopener noreferrer">
+                Facebook()
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-300 to-blue-500 group-hover:w-full transition-all duration-300"></span>
               </Link>
               <Link href="#" className="text-gray-500 hover:text-blue-600 transition-colors relative group">

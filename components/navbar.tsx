@@ -73,6 +73,14 @@ export default function Navbar() {
               <Star className="inline-block w-3 h-3 mr-1 text-amber-400 opacity-0 group-hover:opacity-100 transition-opacity" />
               join()<span className="text-blue-500 opacity-0 group-hover:opacity-100 transition-opacity">;</span>
             </NavLink>
+            <NavLink href="https://www.facebook.com/groups/programmerhandal" className="rotate-[1deg] group" target="_blank" rel="noopener noreferrer">
+              <Star className="inline-block w-3 h-3 mr-1 text-amber-400 opacity-0 group-hover:opacity-100 transition-opacity" />
+              facebook()<span className="text-blue-500 opacity-0 group-hover:opacity-100 transition-opacity">;</span>
+            </NavLink>
+            <NavLink href="https://discord.gg/W4XyRAmPSD" className="-rotate-[1.5deg] group" target="_blank" rel="noopener noreferrer">
+              <Star className="inline-block w-3 h-3 mr-1 text-amber-400 opacity-0 group-hover:opacity-100 transition-opacity" />
+              discord()<span className="text-blue-500 opacity-0 group-hover:opacity-100 transition-opacity">;</span>
+            </NavLink>
           </nav>
 
           <button
@@ -118,6 +126,14 @@ export default function Navbar() {
               <Sparkles className="inline-block w-4 h-4 mr-2 text-blue-500" />
               join()<span className="text-blue-500">;</span>
             </MobileNavLink>
+            <MobileNavLink href="https://www.facebook.com/groups/programmerhandal" onClick={() => setIsOpen(false)} className="text-lg -rotate-[0.5deg]" target="_blank" rel="noopener noreferrer">
+              <Sparkles className="inline-block w-4 h-4 mr-2 text-blue-500" />
+              facebook()<span className="text-blue-500">;</span>
+            </MobileNavLink>
+            <MobileNavLink href="https://discord.gg/W4XyRAmPSD" onClick={() => setIsOpen(false)} className="text-lg rotate-[1deg]" target="_blank" rel="noopener noreferrer">
+              <Sparkles className="inline-block w-4 h-4 mr-2 text-blue-500" />
+              discord()<span className="text-blue-500">;</span>
+            </MobileNavLink>
           </div>
           <div className="mt-auto p-4 text-center text-sm text-gray-500 font-mono border-t">
             <p className="rotate-[1deg]">"Life is too short to not procrastinate"</p>
@@ -133,13 +149,17 @@ interface NavLinkProps {
   href: string
   children: React.ReactNode
   className?: string
+  target?: string
+  rel?: string
 }
 
-function NavLink({ href, children, className = "" }: NavLinkProps) {
+function NavLink({ href, children, className = "", target, rel }: NavLinkProps) {
   return (
     <Link
       href={href}
       className={`text-gray-700 hover:text-blue-600 transition-colors relative group/link ${className}`}
+      target={target}
+      rel={rel}
     >
       {children}
       <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-400 to-blue-600 group-hover/link:w-full transition-all duration-300"></span>
@@ -152,14 +172,18 @@ interface MobileNavLinkProps {
   children: React.ReactNode
   onClick: () => void
   className?: string
+  target?: string
+  rel?: string
 }
 
-function MobileNavLink({ href, children, onClick, className = "" }: MobileNavLinkProps) {
+function MobileNavLink({ href, children, onClick, className = "", target, rel }: MobileNavLinkProps) {
   return (
     <Link
       href={href}
       onClick={onClick}
       className={`text-gray-700 hover:text-blue-600 transition-colors relative group ${className}`}
+      target={target}
+      rel={rel}
     >
       {children}
       <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-400 to-blue-600 group-hover:w-full transition-all duration-300"></span>
