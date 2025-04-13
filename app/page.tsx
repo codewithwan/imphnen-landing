@@ -9,6 +9,7 @@ import GallerySection from "@/components/section/gallery-section"
 import StatsSection from "@/components/section/stats-section"
 import TimelineSection from "@/components/section/timeline-section"
 import ToolsSection from "@/components/section/tools-section"
+import EventSection from "@/components/section/event-section"
 import Footer from "@/components/footer"
 export default function Home() {
   return (
@@ -34,6 +35,9 @@ export default function Home() {
         {/* Productivity Tools Section */}
         <ToolsSection />
 
+        {/* Event Section */}
+        <EventSection />
+
         {/* Procrastinator Stats Section */}
         <StatsSection />
 
@@ -46,7 +50,6 @@ export default function Home() {
         {/* Quote Section */}
         <QuoteSection />
       </main>
-      
       <Footer />
     </div>
   )
